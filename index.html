@@ -12,6 +12,20 @@
                  var bodyGround = document.getElementById("body");
                  bodyGround.style.backgroundColor = SeletColor;
             }
+            function validFrom(){
+                var name = document.regiset.username.value;
+                var password =document.regiset.password.value;
+                var email =document.regiset.email.value;
+                if(name == null || name.length <= 3 ||name.length >= 10 )
+                {
+                     alert("The Name Is Wrong !");
+                     return flase;
+                }
+                if(password= null  ||  ){
+
+
+                }
+            }
                
         </script>
     </head>
@@ -31,10 +45,10 @@
                 <input type="password" name="password">
                 <label>E-mail</label>
                 <input type="email" name="email">
-                <label>Gender</label>
+                <label>age</label>
                 <select name="Gender" id="">
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
+                    <option value="Male">Over 18</option>
+                    <option value="Female">Less 18</option>
                 </select>
                 <button type="submit" value="Send Your Data">Regiset</button>
             </fieldset>
