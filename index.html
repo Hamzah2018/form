@@ -10,21 +10,27 @@
             function ChangeColor(){
                  var SeletColor = document.getElementById("selectColor").value;
                  var bodyGround = document.getElementById("body");
-                 bodyGround.style.backgroundColor = SeletColor;
+          bodyGround.style.backgroundColor = SeletColor;
             }
             function validFrom(){
                 var name = document.regiset.username.value;
-                var password =document.regiset.password.value;
-                var email =document.regiset.email.value;
-                if(name == null || name.length <= 3 ||name.length >= 10 )
+                var password = document.regiset.password.value;
+                var email = document.regiset.email.value;
+                if(name == null || name.length <= 3 || name.length >= 10 )
                 {
-                     alert("The Name Is Wrong !");
+                   
+                }
+                if(password= null ){ 
+                     alert("Write the bass word!");
                      return flase;
                 }
-                if(password= null  ||  ){
-
-
+                var ageValid = document.getElementById("Age").value;
+                if(ageValid == less){
+                    alert("You are Child You can't eneter our website!");
+                    return flase;
                 }
+                
+
             }
                
         </script>
@@ -46,7 +52,7 @@
                 <label>E-mail</label>
                 <input type="email" name="email">
                 <label>age</label>
-                <select name="Age" id="">
+                <select name="Age" id="age">
                     <option value="over">Over 18</option>
                     <option value="less">Less 18</option>
                 </select>
